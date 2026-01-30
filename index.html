@@ -4424,16 +4424,13 @@
 .status-badge.dispute { background: #F44336; color: white; }
 
 #p2p-trade-room {
-    position: absolute; /* fixed የነበረው ተቀይሯል */
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    min-height: 100vh;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100vh;
     background: #000;
     z-index: 200;
-    padding: 15px;
-    box-sizing: border-box;
-    padding-bottom: 150px; /* ለታችኛው buttons ቦታ */
+    padding: 20px;
+    overflow-y: auto;
+    padding-bottom: 120px; /* Space for bottom buttons */
 }
 
 .star-rating span:hover {
@@ -4442,14 +4439,13 @@
 }
 /* === CHAT STYLES === */
 .chat-container {
-    background: #111;
+    background: #1a1a1a;
     border-radius: 12px;
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
-    min-height: 150px; /* ቋሚ 350px ከማድረግ ይሄ ይሻላል */
-    max-height: 100px;
+    height: 350px;
     border: 1px solid #333;
-    margin-bottom: 100px; /* የታችኛው አዝራሮች እንዳይሸፍኑት */
 }
 
 .chat-messages {
@@ -4623,7 +4619,7 @@
 #create-ad-modal .modal-content {
     background: #1a1a1a;
     width: 90%;
-    max-width: 260px;
+    max-width: 360px;
     padding: 15px;
     border-radius: 15px;
     border: 1px solid #333;
